@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text_Rpg</title>
+  <!-- <link rel="stylesheet" href="./textRoleplaying.css"> -->
+</head>
+<body>
+  <div>
+    <!-- <img id="Background_img" src="Background_img.png" alt="배경 이미지"> -->
+  </div>
+  <form id="start_screen">
+    <input id="user_name" placeholder="주인공 이름을 입력하세요.">
+    <button id="start">게임 시작</button>
+  </form>
+  <div id="screen">
+    <div id="hero_state">
+      <span id="hero_name"></span>
+      <span id="hero_level"></span>
+      <span id="hero_hp"></span>
+      <span id="hero_xp"></span>
+      <span id="hero_atk"></span>
+    </div>
+    <form id="game_menu" style="display: none;">
+      <div id="menu_1">1. 모험</div>
+      <div id="menu_2">2. 휴식</div>
+      <div id="menu_3">3. 종료</div>
+      <input id="menu_input">
+      <button id="menu_button">입력</button>    
+    </form>
+    <form id="battle_menu" style="display: none;">
+      <div id="battle_1">1. 공격</div>
+      <div id="battle_2">2. 회복</div>
+      <div id="battle_3">3. 도망</div>
+      <input id="battle_input" />
+      <button id="battle_button">입력</button>
+    </form>
+    <div id="message"></div>
+    <div id="monster_stat">
+      <span id="monster_name"></span>
+      <span id="monster_hp"></span>
+      <span id="monster_atk"></span>
+    </div>
+  </div>
+  <script src="./textRoleplaying_class.js"></script>
+</body>
+</html>
